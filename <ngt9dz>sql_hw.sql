@@ -1,54 +1,35 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red98\green0\blue117;\red223\green223\blue223;\red52\green52\blue52;
-\red251\green0\blue255;\red152\green0\blue15;\red19\green85\blue52;\red135\green136\blue100;\red16\green120\blue67;
-}
-{\*\expandedcolortbl;;\cssrgb\c46667\c0\c53333;\cssrgb\c89804\c89804\c89804;\cssrgb\c26667\c26667\c26667;
-\cssrgb\c100000\c0\c100000;\cssrgb\c66667\c6667\c6667;\cssrgb\c6667\c40000\c26667;\cssrgb\c60000\c60000\c46667;\cssrgb\c0\c53333\c33333;
-}
-\margl1440\margr1440\vieww14660\viewh14860\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt 
-\f0\fs26\fsmilli13120 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 SELECT}}
-\f0\fs26\fsmilli13120 \cf4 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 \'a0name\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0country\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0Continent\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 "South America"\cf4 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0Population\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0country\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0Name\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 "Germany"\cf4 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0name\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0city\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0CountryCode\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 "JPN"\cf4 \strokec4 ;\
-SELECT Name, Population FROM country WHERE Continent = "Africa" ORDER BY Population DESC LIMIT 3;\
-SELECT Name, LifeExpectancy FROM country WHERE Population BETWEEN 1000000 AND 5000000;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \strokec2 SELECT country.name FROM country JOIN countrylanguage ON country.Code = countrylanguage.CountryCode WHERE countrylanguage.Language = "French" AND countrylanguage.IsOfficial = "T";}}\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0Title\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Album\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0ArtistId\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf7 \cb3 \strokec7 1\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \strokec2 SELECT}}\cf4 \cb3 \strokec4 \'a0FirstName,\'a0LastName,\'a0Email\'a0\cf2 \strokec2 from\cf4 \strokec4 \'a0Customer\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0Country\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 "Brazil"\cf4 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0Name\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Playlist;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_count"}}{\fldrslt \cf2 \cb3 \strokec2 COUNT}}\cf8 \cb3 \strokec8 (\cf5 \cb3 \strokec5 *\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 AS\cf4 \strokec4 \'a0TotalTracks\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Track\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0GenreId\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf8 \cb3 \strokec8 (\cf4 \cb3 \strokec4 \'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \strokec2 SELECT}}\'a0GenreId\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Genre\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0Name\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 'Rock'\cf4 \strokec4 \'a0\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \strokec2 SELECT}}\'a0FirstName,\'a0LastName\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Employee\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0ReportsTo\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf8 \cb3 \strokec8 ({\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \strokec2 SELECT}}\cf4 \cb3 \strokec4 \'a0EmployeeId\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Employee\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0FirstName\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 'Nancy'\cf4 \strokec4 \'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/logical-operators.html%23operator_and"}}{\fldrslt \cf2 \cb3 \strokec2 AND}}\'a0LastName\'a0\cf5 \strokec5 =\cf4 \strokec4 \'a0\cf6 \strokec6 'Edwards'\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \strokec2 SELECT}}\'a0CustomerId,\'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_sum"}}{\fldrslt \cf2 \cb3 \strokec2 SUM}}\cf8 \cb3 \strokec8 (\cf4 \cb3 \strokec4 Total\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 AS\cf4 \strokec4 \'a0TotalSales\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Invoice\'a0\cf2 \strokec2 GROUP\cf4 \strokec4 \'a0\cf2 \strokec2 BY\cf4 \strokec4 \'a0CustomerId;\
-\
-\
-\
-CREATE DATABASE ngt9dz; \
-use ngt9dz;\
-\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/create-table.html"}}{\fldrslt \cf2 \cb3 \strokec2 CREATE}}\'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/create-table.html"}}{\fldrslt \cf2 \cb3 \strokec2 TABLE}}\'a0Breed\'a0\cf8 \cb3 \strokec8 (\cf4 \cb3 \strokec4 CatID\'a0\cf9 \cb3 \strokec9 INT\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 PRIMARY\cf4 \strokec4 \'a0\cf2 \strokec2 KEY\cf4 \strokec4 \'a0\cf2 \strokec2 AUTO_INCREMENT\cf4 \strokec4 ,\'a0Name\'a0\cf9 \cb3 \strokec9 VarChar\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 20\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ,\'a0Weight\'a0\cf9 \cb3 \strokec9 Decimal\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 10\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 2\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ,\'a0Length\'a0\cf9 \cb3 \strokec9 Decimal\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 10\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 2\cf8 \cb3 \strokec8 ))\cf4 \cb3 \strokec4 ;\
-\
-CREATE TABLE Customers(CustomerID INT PRIMARY KEY AUTO_INCREMENT, FirstName VARCHAR(50), LastName VARCHAR(50), PhoneNumber VARCHAR (15));\
-\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/create-table.html"}}{\fldrslt \cf2 \cb3 \strokec2 CREATE}}\'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/create-table.html"}}{\fldrslt \cf2 \cb3 \strokec2 TABLE}}\'a0Prices\cf8 \cb3 \strokec8 (\cf4 \cb3 \strokec4 PriceID\'a0\cf9 \cb3 \strokec9 INT\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 PRIMARY\cf4 \strokec4 \'a0\cf2 \strokec2 KEY\cf4 \strokec4 \'a0\cf2 \strokec2 AUTO_INCREMENT\cf4 \strokec4 ,\'a0Price\'a0\cf9 \cb3 \strokec9 VARCHAR\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 50\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ,\'a0Food\'a0\cf9 \cb3 \strokec9 VARCHAR\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 50\cf8 \cb3 \strokec8 )\cf4 \cb3 \strokec4 ,\'a0Toys\'a0\cf9 \cb3 \strokec9 VARCHAR\cf8 \cb3 \strokec8 (\cf7 \cb3 \strokec7 50\cf8 \cb3 \strokec8 ))\cf4 \cb3 \strokec4 ;\
-\
-\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/insert.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 INSERT}}\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 INTO\cf4 \strokec4 \'a0Breed\'a0\cf8 \strokec8 (\cf4 \strokec4 Name,\'a0Weight,\'a0Length\cf8 \strokec8 )\cf4 \strokec4 \'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/miscellaneous-functions.html%23function_values"}}{\fldrslt \cf2 \strokec2 VALUES}}\'a0\cf8 \strokec8 (\cf6 \strokec6 "Ragdoll"\cf4 \strokec4 ,\'a0\cf7 \cb3 \strokec7 15\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 20\cf8 \cb3 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "Scottish Fold"\cf4 \strokec4 ,\'a0\cf7 \cb3 \strokec7 7\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 20\cf8 \cb3 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "Maine Coon"\cf4 \strokec4 ,\'a0\cf7 \cb3 \strokec7 15\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 19\cf8 \cb3 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "Selkirk Rex"\cf4 \strokec4 ,\'a0\cf7 \cb3 \strokec7 16\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 30\cf8 \cb3 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "Russian Blue"\cf4 \strokec4 ,\'a0\cf7 \cb3 \strokec7 10\cf4 \cb3 \strokec4 ,\'a0\cf7 \cb3 \strokec7 20\cf8 \cb3 \strokec8 )\cf4 \strokec4 ;\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf4 \cb3 \strokec4 \
-INSERT INTO Customers (FirstName, LastName, PhoneNumber) VALUES ("Claire", "Lee", "999-999-9999"), ("Andrew", "Bak", "100-100-1000"), ("Justin", "Lee", "801-901-7011"), ("Gloria", "Ren", "888-888-8888"), ("Tae", "Lee", "111-111-1111");\
-\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/insert.html"}}{\fldrslt \cf2 \cb3 \strokec2 INSERT}}\cf4 \cb3 \strokec4 \'a0\cf2 \strokec2 INTO\cf4 \strokec4 \'a0Prices\'a0\cf8 \strokec8 (\cf4 \strokec4 Price,\'a0Food,\'a0Toys\cf8 \strokec8 )\cf4 \strokec4 \'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/miscellaneous-functions.html%23function_values"}}{\fldrslt \cf2 \strokec2 VALUES}}\'a0\cf8 \strokec8 (\cf6 \strokec6 "2500"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "50"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "20"\cf8 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "1000"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "30"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "30"\cf8 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "1500"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "40"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "70"\cf8 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "500"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "50"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "10"\cf8 \strokec8 )\cf4 \strokec4 ,\'a0\cf8 \strokec8 (\cf6 \strokec6 "2000"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "90"\cf4 \strokec4 ,\'a0\cf6 \strokec6 "10"\cf8 \strokec8 )\cf4 \strokec4 ;\
-\
-\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \strokec2 SELECT}}\'a0Name\'a0\cf2 \strokec2 from\cf4 \strokec4 \'a0Breed\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0Weight\'a0\cf5 \cb3 \strokec5 =\cf4 \cb3 \strokec4 \'a0\cf8 \strokec8 ({\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \strokec2 SELECT}}\cf4 \strokec4 \'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html%23function_max"}}{\fldrslt \cf2 \cb3 \strokec2 MAX}}\cf8 \strokec8 (\cf4 \strokec4 Weight\cf8 \strokec8 )\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Breed\cf8 \strokec8 )\cf4 \strokec4 ;\
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \strokec2 SELECT}}\'a0FirstName,\'a0LastName,\'a0PhoneNumber\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Customers\'a0\cf2 \strokec2 WHERE\cf4 \strokec4 \'a0PhoneNumber\'a0{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/string-comparison-functions.html%23operator_like"}}{\fldrslt \cf2 \cb3 \strokec2 LIKE}}\'a0\cf6 \strokec6 '%111%'\cf4 \strokec4 ;\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://ds2002.org/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html"}}{\fldrslt \cf2 \cb3 \ul \ulc2 \strokec2 SELECT}}\'a0\cf2 \strokec2 DISTINCT\cf4 \strokec4 \'a0LastName\'a0\cf2 \strokec2 FROM\cf4 \strokec4 \'a0Customers;}
+SELECT name FROM country WHERE Continent = "South America";
+SELECT Population FROM country WHERE Name = "Germany";
+SELECT name FROM city WHERE CountryCode = "JPN";
+SELECT Name, Population FROM country WHERE Continent = "Africa" ORDER BY Population DESC LIMIT 3;
+SELECT Name, LifeExpectancy FROM country WHERE Population BETWEEN 1000000 AND 5000000;
+SELECT country.name FROM country JOIN countrylanguage ON country.Code = countrylanguage.CountryCode WHERE countrylanguage.Language = "French" AND countrylanguage.IsOfficial = "T";
+SELECT Title FROM Album WHERE ArtistId = 1
+SELECT FirstName, LastName, Email from Customer WHERE Country = "Brazil";
+SELECT Name FROM Playlist;
+SELECT COUNT(*) AS TotalTracks FROM Track WHERE GenreId = ( SELECT GenreId FROM Genre WHERE Name = 'Rock' );
+SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FROM Employee WHERE FirstName = 'Nancy' AND LastName = 'Edwards');
+SELECT CustomerId, SUM(Total) AS TotalSales FROM Invoice GROUP BY CustomerId;
+
+
+
+CREATE DATABASE ngt9dz; 
+use ngt9dz;
+
+CREATE TABLE Breed (CatID INT PRIMARY KEY AUTO_INCREMENT, Name VarChar(20), Weight Decimal(10, 2), Length Decimal(10, 2));
+
+CREATE TABLE Customers(CustomerID INT PRIMARY KEY AUTO_INCREMENT, FirstName VARCHAR(50), LastName VARCHAR(50), PhoneNumber VARCHAR (15));
+
+CREATE TABLE Prices(PriceID INT PRIMARY KEY AUTO_INCREMENT, Price VARCHAR(50), Food VARCHAR(50), Toys VARCHAR(50));
+
+
+INSERT INTO Breed (Name, Weight, Length) VALUES ("Ragdoll", 15, 20), ("Scottish Fold", 7, 20), ("Maine Coon", 15, 19), ("Selkirk Rex", 16, 30), ("Russian Blue", 10, 20);
+
+INSERT INTO Customers (FirstName, LastName, PhoneNumber) VALUES ("Claire", "Lee", "999-999-9999"), ("Andrew", "Bak", "100-100-1000"), ("Justin", "Lee", "801-901-7011"), ("Gloria", "Ren", "888-888-8888"), ("Tae", "Lee", "111-111-1111");
+
+INSERT INTO Prices (Price, Food, Toys) VALUES ("2500", "50", "20"), ("1000", "30", "30"), ("1500", "40", "70"), ("500", "50", "10"), ("2000", "90", "10");
+
+
+SELECT Name from Breed WHERE Weight = (SELECT MAX(Weight)FROM Breed);
+SELECT FirstName, LastName, PhoneNumber FROM Customers WHERE PhoneNumber LIKE '%111%';
+SELECT DISTINCT LastName FROM Customers;
